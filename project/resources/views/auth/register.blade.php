@@ -31,6 +31,12 @@
 
             <x-input-error :messages="$errors->get('sexe')" class="mt-2" />
         </div>
+        <label for="">Destination</label>
+        <select name="destination_id" class="border-2  w-full bg-gray-100 text-gray-900  p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="Titre*">
+            @foreach($roles as $role)
+            <option value="{{$role->id}}">{{$role->role}}</option>
+            @endforeach
+        </select>
 
         <!-- Password -->
         <div class="mt-4">
