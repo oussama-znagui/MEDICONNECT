@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('sexe');
             $table->date('birthDate');
             $table->foreignId('role_id')->constrained('roles');
+            $table->timestamps();
         });
     }
 
