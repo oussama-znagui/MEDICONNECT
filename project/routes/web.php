@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use Spatie\Permission\Role;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ use Spatie\Permission\Role;
 */
 
 Route::get('/', function () {
+   
+    
     return view('welcome');
 });
 

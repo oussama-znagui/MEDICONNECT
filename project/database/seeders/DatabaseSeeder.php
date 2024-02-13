@@ -14,14 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        \App\Models\Role::factory()->create([
-            'role' => 'Admin',           
-        ]);
-        \App\Models\Role::factory()->create([
-            'role' => 'Parient',           
-        ]);
-        \App\Models\Role::factory()->create([
-            'role' => 'Doctor',           
-        ]);
+        $this->call(RoleSeeder::class);
     }
 }

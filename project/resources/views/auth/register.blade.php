@@ -32,9 +32,9 @@
             <x-input-error :messages="$errors->get('sexe')" class="mt-2" />
         </div>
         <label for="">role</label>
-        <select name="role_id" class="border-2  w-full bg-gray-100 text-gray-900  p-3 rounded-lg focus:outline-none focus:shadow-outline" >
+        <select name="role_id" class="border-2  w-full bg-gray-100 text-gray-900  p-3 rounded-lg focus:outline-none focus:shadow-outline">
             @foreach($roles as $role)
-            <option value="{{$role->id}}">{{$role->role}}</option>
+            <option value="{{$role->id}}">{{$role->name}}</option>
             @endforeach
         </select>
 
