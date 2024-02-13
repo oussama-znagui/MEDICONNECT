@@ -53,7 +53,7 @@
         <div class="items-center block w-auto max-h-screen overflow-auto  grow basis-full">
             <ul class="flex flex-col pl-0 mb-0">
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 bg-blue-500/13 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors" href="#">
+                    <a class="py-2.7 bg-blue-500/13 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors" href="#dash">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-tv-2"></i>
                         </div>
@@ -80,22 +80,15 @@
                 </li>
 
                 <li class="mt-0.5 w-full">
-                    <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/virtual-reality.html">
+                    <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="#users">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-cyan-500 ni ni-app"></i>
                         </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Virtual Reality</span>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">gestion des utilisateur</span>
                     </a>
                 </li>
 
-                <li class="mt-0.5 w-full">
-                    <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/rtl.html">
-                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-red-600 ni ni-world-2"></i>
-                        </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">RTL</span>
-                    </a>
-                </li>
+
 
                 <li class="w-full mt-4">
                     <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase dark:text-white opacity-60">Account pages</h6>
@@ -110,21 +103,13 @@
                     </a>
                 </li>
 
-                <li class="mt-0.5 w-full">
-                    <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/sign-in.html">
-                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-orange-500 ni ni-single-copy-04"></i>
-                        </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign In</span>
-                    </a>
-                </li>
 
                 <li class="mt-0.5 w-full">
                     <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/sign-up.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-cyan-500 ni ni-collection"></i>
                         </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign Up</span>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Log out</span>
                     </a>
                 </li>
             </ul>
@@ -265,7 +250,7 @@
         <!-- cards -->
         <div class="w-full px-6 py-6 mx-auto">
             <!-- row 1 -->
-            <div class="flex flex-wrap -mx-3">
+            <div class="flex flex-wrap -mx-3" id="dash">
                 <!-- card1 -->
                 <div class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
                     <div class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
@@ -275,10 +260,7 @@
                                     <div>
                                         <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase dark:text-white dark:opacity-60">Today's Money</p>
                                         <h5 class="mb-2 font-bold dark:text-white">$53,000</h5>
-                                        <p class="mb-0 dark:text-white dark:opacity-60">
-                                            <span class="text-sm font-bold leading-normal text-emerald-500">+55%</span>
-                                            since yesterday
-                                        </p>
+
                                     </div>
                                 </div>
                                 <div class="px-3 text-right basis-1/3">
@@ -300,10 +282,7 @@
                                     <div>
                                         <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase dark:text-white dark:opacity-60">Today's Users</p>
                                         <h5 class="mb-2 font-bold dark:text-white">2,300</h5>
-                                        <p class="mb-0 dark:text-white dark:opacity-60">
-                                            <span class="text-sm font-bold leading-normal text-emerald-500">+3%</span>
-                                            since last week
-                                        </p>
+
                                     </div>
                                 </div>
                                 <div class="px-3 text-right basis-1/3">
@@ -325,10 +304,7 @@
                                     <div>
                                         <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase dark:text-white dark:opacity-60">New Clients</p>
                                         <h5 class="mb-2 font-bold dark:text-white">+3,462</h5>
-                                        <p class="mb-0 dark:text-white dark:opacity-60">
-                                            <span class="text-sm font-bold leading-normal text-red-600">-2%</span>
-                                            since last quarter
-                                        </p>
+
                                     </div>
                                 </div>
                                 <div class="px-3 text-right basis-1/3">
@@ -350,10 +326,7 @@
                                     <div>
                                         <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase dark:text-white dark:opacity-60">Sales</p>
                                         <h5 class="mb-2 font-bold dark:text-white">$103,430</h5>
-                                        <p class="mb-0 dark:text-white dark:opacity-60">
-                                            <span class="text-sm font-bold leading-normal text-emerald-500">+5%</span>
-                                            than last month
-                                        </p>
+
                                     </div>
                                 </div>
                                 <div class="px-3 text-right basis-1/3">
@@ -591,10 +564,16 @@
                     <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="flex justify-between items-center mt-6">
                             <div class=" px-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
-                                <h6 class="mb-0 dark:text-white">Billing Information</h6>
+                                <h6 class="mb-0 dark:text-white">Spécialité medicale</h6>
                             </div>
-                            <div class="flex-none w-1/2 max-w-full px-3 text-right">
-                                <a class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" href="javascript:;"> <i class="fas fa-plus"> </i>&nbsp;&nbsp;Add New Card</a>
+                            <div class="flex justify-end 	  items-center w-3/4 max-w-full px-3 text-right">
+                                <form action="" method="post" class="flex justify-around	  items-center">
+                                    <input type="email" id="email" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
+
+
+                                    <input type="submit" class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" value="Ajouter une nouvelle spétialité" />
+                                </form>
+
                             </div>
                         </div>
                         <div class="flex-auto p-4 pt-6">
@@ -602,27 +581,14 @@
                                 <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
                                     <div class="flex flex-col">
                                         <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Viking Burrito</span></span>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Email Address: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">oliver@burrito.com</span></span>
-                                        <span class="text-xs leading-tight dark:text-white/80">VAT Number: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">FRB1235476</span></span>
+                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name:regqerg</span>
                                     </div>
                                     <div class="ml-auto text-right">
                                         <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
                                         <a class="inline-block dark:text-white px-4 py-2.5 mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
                                     </div>
                                 </li>
-                                <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
-                                    <div class="flex flex-col">
-                                        <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Viking Burrito</span></span>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Email Address: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">oliver@burrito.com</span></span>
-                                        <span class="text-xs leading-tight dark:text-white/80">VAT Number: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">FRB1235476</span></span>
-                                    </div>
-                                    <div class="ml-auto text-right">
-                                        <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
-                                        <a class="inline-block dark:text-white px-4 py-2.5 mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
-                                    </div>
-                                </li>
+
 
                             </ul>
                         </div>
@@ -636,15 +602,27 @@
 
 
 
-            <div class="flex flex-wrap -mx-3">
+            <div class="flex flex-wrap -mx-3" id="medi">
                 <div class="w-full max-w-full px-3 mt-6  md:flex-none">
                     <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="flex justify-between items-center mt-6">
                             <div class=" px-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
-                                <h6 class="mb-0 dark:text-white">Billing Information</h6>
+                                <h6 class="mb-0 dark:text-white">Gestion des
+                                    médicaments</h6>
                             </div>
-                            <div class="flex-none w-1/2 max-w-full px-3 text-right">
-                                <a class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" href="javascript:;"> <i class="fas fa-plus"> </i>&nbsp;&nbsp;Add New Card</a>
+                            <div class="flex-none w-3/4 max-w-full px-3 text-right">
+                                <form action="" method="post" class="flex justify-between	  items-center">
+                                    <input type="email" id="email" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
+
+                                    <select id="countries" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Choisir la spétialité</option>
+
+                                    </select>
+
+
+                                    <input type="submit" class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" value="Ajouter un medicament" />
+                                </form>
+
                             </div>
                         </div>
                         <div class="flex-auto p-4 pt-6">
@@ -652,9 +630,7 @@
                                 <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
                                     <div class="flex flex-col">
                                         <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Viking Burrito</span></span>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Email Address: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">oliver@burrito.com</span></span>
-                                        <span class="text-xs leading-tight dark:text-white/80">VAT Number: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">FRB1235476</span></span>
+                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: fstryjdrysrj</span>
                                     </div>
                                     <div class="ml-auto text-right">
                                         <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
@@ -664,9 +640,7 @@
                                 <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
                                     <div class="flex flex-col">
                                         <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Viking Burrito</span></span>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Email Address: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">oliver@burrito.com</span></span>
-                                        <span class="text-xs leading-tight dark:text-white/80">VAT Number: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">FRB1235476</span></span>
+                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: fstryjdrysrj</span>
                                     </div>
                                     <div class="ml-auto text-right">
                                         <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
@@ -685,7 +659,7 @@
 
 
 
-            <div class="flex flex-wrap -mx-3 mt-6">
+            <div class="flex flex-wrap -mx-3 mt-6" id="users">
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
