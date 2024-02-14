@@ -20,4 +20,13 @@ class MedicinController extends Controller
         $medicin = Medicin::create($validatedData);
         return redirect('/admin');
     }
+
+    public function destroy(Medicin $medicin){
+        $medicin->delete();
+        return back();
+
+    }
+
+
+    
 }

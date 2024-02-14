@@ -47,6 +47,6 @@ Route::delete('/deleteSpecialty/{specialty}', [SpecialtyController::class, "dest
 Route::patch('updateSpecialty/{specialty}', [SpecialtyController::class, "update"])->name("updateSpecialty");
 
 Route::post('/addMedicins', [MedicinController::class, "store"]);
-
+Route::delete('/deleteMedicin/{medicin}', [MedicinController::class, "destroy"])->name('deleteMedicin');
 
 require __DIR__ . '/auth.php';
