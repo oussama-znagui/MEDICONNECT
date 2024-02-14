@@ -565,6 +565,8 @@
                         <div class="flex justify-between items-center mt-6">
                             <div class=" px-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
                                 <h6 class="mb-0 dark:text-white">Spécialité medicale</h6>
+
+
                             </div>
                             <div class="flex justify-end 	  items-center w-3/4 max-w-full px-3 text-right">
                                 <form action="/AddSpeciality" method="post" class="flex justify-around	  items-center">
@@ -580,16 +582,22 @@
                         </div>
                         <div class="flex-auto p-4 pt-6">
                             <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+
+                                @foreach($specilty as $sp)
                                 <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
                                     <div class="flex flex-col">
-                                        <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name:regqerg</span>
+                                        <h6 class="mb-4 text-sm leading-normal dark:text-white"> {{$sp->specialty}} </h6>
+                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Creer le : {{$sp->created_at}} </span>
                                     </div>
                                     <div class="ml-auto text-right">
-                                        <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                                        <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="/deleteSpecialty"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
                                         <a class="inline-block dark:text-white px-4 py-2.5 mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
                                     </div>
                                 </li>
+
+
+                                @endforeach
+
 
 
                             </ul>

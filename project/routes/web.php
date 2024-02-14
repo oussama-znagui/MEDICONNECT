@@ -23,11 +23,11 @@ Route::get('/', function () {
 
     return view('welcome');
 });
-Route::get('/admin', function () {
+// Route::get('/admin', function () {
+//     return view('admin',["specilty" => Specialty::all()]);
+// });
 
-
-    return view('admin');
-});
+Route::get('/admin', [SpecialtyController::class,"index"]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
