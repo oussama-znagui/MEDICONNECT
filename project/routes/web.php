@@ -27,7 +27,7 @@ Route::get('/', function () {
 //     return view('admin',["specilty" => Specialty::all()]);
 // });
 
-Route::get('/admin', [SpecialtyController::class,"index"]);
+Route::get('/admin', [SpecialtyController::class, "index"]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -41,5 +41,7 @@ Route::middleware('auth')->group(function () {
 
 
 Route::post('/AddSpeciality', [SpecialtyController::class, "store"]);
+Route::delete('/deleteSpecialty/{specialty}', [SpecialtyController::class, "destroy"])->name("deleteSpecialty");
+Route::patch('updateSpecialty/{specialty}', [SpecialtyController::class, "update"])->name("updateSpecialty");
 
 require __DIR__ . '/auth.php';

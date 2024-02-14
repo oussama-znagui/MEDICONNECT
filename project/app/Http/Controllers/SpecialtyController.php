@@ -22,4 +22,21 @@ class SpecialtyController extends Controller
         $specilty = Specialty::create($validatedData);
         return redirect('/admin');
     }
+    public function destroy(Specialty $specialty)
+    {
+
+        $specialty->delete();
+        return back();
+    }
+
+    public function update(Request $request, Specialty $specialty)
+    {
+        // dd($request['specialty']);
+        $validatedData = $request->validate([
+            'specialty' => ['required'],
+        ]);
+
+        $specialty->update($validatedData);
+        return back();
+    }
 }
