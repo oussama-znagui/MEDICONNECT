@@ -567,8 +567,10 @@
                                 <h6 class="mb-0 dark:text-white">Spécialité medicale</h6>
                             </div>
                             <div class="flex justify-end 	  items-center w-3/4 max-w-full px-3 text-right">
-                                <form action="" method="post" class="flex justify-around	  items-center">
-                                    <input type="email" id="email" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
+                                <form action="/AddSpeciality" method="post" class="flex justify-around	  items-center">
+                                    @csrf
+
+                                    <input type="text" name="specialty" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
 
 
                                     <input type="submit" class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" value="Ajouter une nouvelle spétialité" />
