@@ -635,10 +635,11 @@
                                     médicaments</h6>
                             </div>
                             <div class="flex-none w-3/4 max-w-full px-3 text-right">
-                                <form action="" method="post" class="flex justify-between	  items-center">
-                                    <input type="text" id="email" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
+                                <form action="/addMedicins" method="post" class="flex justify-between	  items-center">
+                                    @csrf
+                                    <input type="text" name="medicin" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  " placeholder="lorem" required>
 
-                                    <select id="countries" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <select name="specialty_id" class="mx-4 p-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                         <option selected>Choisir la spétialité</option>
                                         @foreach($specilty as $sp)
 
@@ -655,26 +656,23 @@
                         </div>
                         <div class="flex-auto p-4 pt-6">
                             <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+                                @foreach($medicins as $md)
                                 <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
                                     <div class="flex flex-col">
-                                        <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: fstryjdrysrj</span>
+                                        <h6 class="mb-4 text-sm leading-normal dark:text-white">{{ $md->medicin}}</h6>
+                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Specialite: {{ $md->specialty->specialty}}</span>
                                     </div>
                                     <div class="ml-auto text-right">
                                         <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
                                         <a class="inline-block dark:text-white px-4 py-2.5 mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
                                     </div>
                                 </li>
-                                <li class="bg-gray-200 relative flex p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
-                                    <div class="flex flex-col">
-                                        <h6 class="mb-4 text-sm leading-normal dark:text-white">Oliver Liam</h6>
-                                        <span class="mb-2 text-xs leading-tight dark:text-white/80">Company Name: fstryjdrysrj</span>
-                                    </div>
-                                    <div class="ml-auto text-right">
-                                        <a class="relative z-10 inline-block px-4 py-2.5 mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
-                                        <a class="inline-block dark:text-white px-4 py-2.5 mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-sm ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
-                                    </div>
-                                </li>
+
+
+                                @endforeach
+
+
+
 
                             </ul>
                         </div>

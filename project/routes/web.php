@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\MedicinController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SpecialtyController;
+use App\Models\Medicin;
 use App\Models\Specialty;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
@@ -43,5 +45,8 @@ Route::middleware('auth')->group(function () {
 Route::post('/AddSpeciality', [SpecialtyController::class, "store"]);
 Route::delete('/deleteSpecialty/{specialty}', [SpecialtyController::class, "destroy"])->name("deleteSpecialty");
 Route::patch('updateSpecialty/{specialty}', [SpecialtyController::class, "update"])->name("updateSpecialty");
+
+Route::post('/addMedicins', [MedicinController::class, "store"]);
+
 
 require __DIR__ . '/auth.php';
