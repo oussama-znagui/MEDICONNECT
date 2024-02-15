@@ -19,4 +19,8 @@ class Specialty extends Model
     {
         return $this->hasMany(Medicin::class);
     }
+    public function doctors()
+    {
+        return $this->hasMany(Doctor::class);
+    }
 }

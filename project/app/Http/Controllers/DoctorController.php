@@ -15,7 +15,7 @@ class DoctorController extends Controller
     {
         // dd(Auth()->user());
         return view('profilDoctor', [
-            "doctor" => Doctor::with('user')->get(),
+            "doctor" => Doctor::with('user', 'specialty')->get(),
 
         ]);
     }
