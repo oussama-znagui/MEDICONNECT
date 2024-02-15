@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\MedicinController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SpecialtyController;
@@ -30,6 +31,8 @@ Route::get('/', function () {
 // });
 
 Route::get('/admin', [SpecialtyController::class, "index"]);
+
+Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
