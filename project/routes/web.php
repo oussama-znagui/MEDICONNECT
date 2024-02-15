@@ -31,6 +31,7 @@ Route::get('/', function () {
 // });
 
 Route::get('/admin', [SpecialtyController::class, "index"]);
+Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
 

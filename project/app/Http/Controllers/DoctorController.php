@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Doctor;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DoctorController extends Controller
@@ -12,7 +13,11 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        //
+        // dd(Auth()->user());
+        return view('profilDoctor', [
+            "doctor" => Doctor::with('user')->get(),
+
+        ]);
     }
 
     /**
