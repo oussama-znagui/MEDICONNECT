@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules;
 use App\Http\Controllers\Controller;
+use App\Models\Patient;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
@@ -86,6 +87,11 @@ class RegisteredUserController extends Controller
                 $user->assignRole('patient');
                 event(new Registered($user));
                 Auth::login($user);
+
+                Patient::create([
+                    'user_id' => Auth::id(),
+                    'nss' => $validated['nss'],
+                ]);
                 return redirect(RouteServiceProvider::HOME);
                 break;
         }
