@@ -16,7 +16,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         .gradient {
-            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+            background: rgb(34, 146, 195);
+            background: linear-gradient(63deg, rgba(34, 146, 195, 1) 0%, rgba(35, 111, 99, 1) 44%, rgba(0, 228, 255, 1) 100%);
         }
     </style>
 </head>

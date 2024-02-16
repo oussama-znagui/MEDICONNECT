@@ -1,23 +1,23 @@
 <x-app-layout>
+
     <div class="gradient">
-        <div class="pt-24">
+        <div class="pt-10">
             <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <!--Left Col-->
                 <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                    <p class="uppercase tracking-loose w-full">What business are you?</p>
-                    <h1 class="my-4 text-5xl font-bold leading-tight">
-                        Main Hero Message to sell yourself!
-                    </h1>
-                    <p class="leading-normal text-2xl mb-8">
-                        Sub-hero message, not too long and not too short. Make it just right!
+
+                    <h1 class="my-4 text-5xl font-black leading-tight">
+                        MEDICONNECT Votre Santé, Notre Priorité </h1>
+                    <p class="leading-normal text-2xl mb-4">
+                        Notre équipe dévouée est là pour vous offrir des solutions personnalisées pour votre bien-être.
                     </p>
                     <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        Subscribe
+                        explorer les différentes spécialités
                     </button>
                 </div>
                 <!--Right Col-->
                 <div class="w-full md:w-3/5 py-6 text-center">
-                    <img class="w-full md:w-4/5 z-50" src="hero.png" />
+                    <img class="w-full md:w-4/5 z-50" src="/assets/img/home.webp" />
                 </div>
             </div>
         </div>
@@ -168,81 +168,15 @@
                 </div>
             </div>
         </section>
-        <section class="bg-white border-b py-8">
-            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                    Title
-                </h2>
-                <div class="w-full mb-4">
-                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                </div>
-                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                                xGETTING STARTED
-                            </p>
-                            <div class="w-full font-bold text-xl text-gray-800 px-6">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                            <p class="text-gray-800 text-base px-6 mb-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div class="flex items-center justify-start">
-                            <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                Action
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                                xGETTING STARTED
-                            </p>
-                            <div class="w-full font-bold text-xl text-gray-800 px-6">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                            <p class="text-gray-800 text-base px-6 mb-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div class="flex items-center justify-center">
-                            <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                Action
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                                xGETTING STARTED
-                            </p>
-                            <div class="w-full font-bold text-xl text-gray-800 px-6">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                            <p class="text-gray-800 text-base px-6 mb-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div class="flex items-center justify-end">
-                            <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                Action
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <section class="bg-slate-200 py-6">
+            <h1 class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">spécialités médicales</h1>
+            <p class="text-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">explorer les différentes spécialités médicales disponibles sur la plateforme, afin de choisir le médecin correspondant à mes maladies.</p>
+            <h1></h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-3/4 m-auto py-4">
+               
             </div>
+
+
         </section>
         <section class="bg-gray-100 py-8">
             <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
