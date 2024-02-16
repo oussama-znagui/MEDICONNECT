@@ -173,19 +173,22 @@
             <p class="text-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">explorer les différentes spécialités médicales disponibles sur la plateforme, afin de choisir le médecin correspondant à mes maladies.</p>
             <h1></h1>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-3/4 m-auto py-4">
-
-                <a href="cat.php?cat=">
+                @foreach($specialty as $sp)
+                <a href="{{route('specialty',$sp->id)}}">
                     <div class="rounded-lg h-60		 bg-gray-300 max-w-full  bg-[url('/assets/img/carousel-3.jpg')] bg-cover	bg-center	bg-no-repeat">
                         <div class="rounded-lg bg-black opacity-80	 w-full h-full flex justify-center  items-center">
                             <div class='rounded-lg border-neutral-50 border-solid border-2 w-3/4 h-2/4 hover:border-none flex justify-center  items-center font-black text-xl hover:text-3xl ease-in duration-300	'>
                                 <h1 class="text-white text-center">
-                                    ggggggg
+                                    {{$sp->specialty}}
                                 </h1>
 
                             </div>
                         </div>
                     </div>
                 </a>
+
+                @endforeach
+
 
             </div>
 

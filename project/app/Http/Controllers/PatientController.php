@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Patient;
+use App\Models\Specialty;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -12,7 +13,10 @@ class PatientController extends Controller
      */
     public function index()
     {
-        //
+        return view('welcome', [
+            "specialty" => Specialty::all(),
+
+        ]);
     }
 
     /**

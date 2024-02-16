@@ -43,4 +43,13 @@ class SpecialtyController extends Controller
         $specialty->update($validatedData);
         return back();
     }
+
+    public function show(Specialty $specialty)
+    {
+        $specialty = $specialty->load('doctors');
+
+        return view('specialty', [
+            "specialty" => $specialty,
+        ]);
+    }
 }

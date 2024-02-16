@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\MedicinController;
+use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SpecialtyController;
 use App\Models\Medicin;
+use App\Models\Patient;
 use App\Models\Specialty;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
@@ -21,16 +23,17 @@ use Spatie\Permission\Models\Permission;
 |
 */
 
-Route::get('/', function () {
 
-
-    return view('welcome');
-});
 // Route::get('/admin', function () {
 //     return view('admin',["specilty" => Specialty::all()]);
 // });
 
 Route::get('/admin', [SpecialtyController::class, "index"]);
+
+
+Route::get('/', [PatientController::class, "index"]);
+Route::get('/specialty/{specialty}', [SpecialtyController::class, "show"])->name("specialty");
+
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
