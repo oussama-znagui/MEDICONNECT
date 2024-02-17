@@ -25,7 +25,7 @@ class FavorieController extends Controller
             'doctor_id' => $doctor->id,
         ]);
 
-        return redirect('/spe');
+        return redirect(route('specialty', $doctor->specialty->id));
     }
 
     /**

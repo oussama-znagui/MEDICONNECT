@@ -42,9 +42,9 @@
             <h1></h1>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-3/4 m-auto py-4">
                 @foreach($specialty->doctors as $doctor)
-                <section class="pt-16 bg-blueGray-50">
-                    <div class="w-full lg:w-4/12 px-4 mx-auto">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
+                <section class="pt-16">
+                    <div class="w-full  px-4 mx-auto ">
+                        <div class="py-3 bg-slate-200 relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-xl rounded-lg mt-16">
                             <div class="px-6">
                                 <div class="flex flex-wrap justify-center">
                                     <div class="w-full px-4 flex justify-center">
@@ -52,7 +52,7 @@
                                             <img alt="ssssssss" src="/assets/img/doctor.png" class="">
                                         </div>
                                     </div>
-                                    <div class="w-full px-4 text-center mt-20">
+                                    <div class="w-full px-4 text-center">
                                         <div class="flex justify-center py-4 lg:pt-4 pt-8">
                                             <div class="mr-4 p-3 text-center">
                                                 <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
@@ -75,26 +75,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center mt-12">
-                                    <h3 class="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+                                <div class="text-center mt-2">
+                                    <h3 class="text-xl font-semibold leading-normal mb-2 text-blueGray-700 ">
                                         {{ $doctor->user->name}}
                                     </h3>
                                     <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                                         <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
                                         {{ $doctor->user->email}}
                                     </div>
-                                    <div class="mb-2 text-blueGray-600 mt-10">
+                                    <div class="mb-2 text-blueGray-600 mt-2">
                                         <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
                                         {{ $doctor->specialty->specialty}}
                                     </div>
                                     <div class="mb-2 ">
-                                        <a href="{{route('favorie',$doctor->id)}}" class="focus:outline-none text-white bg-black hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                                        <a href="{{route('favorie',$doctor->id)}}" class="focus:outline-none text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                                             Ajouter au favorie
                                         </a>
+                                        <a href="{{route('favorie',$doctor->id)}}" class="block mt-3 focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 ">
+                                            Consulter le profil
+                                        </a>
 
-                                        <form action="">
-                                            <button type="submit" value="" class="focus:outline-none text-white bg-black hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Prendre un rendez-vous</button>
-                                        </form>
+
 
                                     </div>
                                 </div>
@@ -106,6 +107,7 @@
                 </section>
 
                 @endforeach
+
 
 
             </div>
