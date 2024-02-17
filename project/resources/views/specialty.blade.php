@@ -81,15 +81,20 @@
                                     </h3>
                                     <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                                         <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                                        Los Angeles, California
+                                        {{ $doctor->user->email}}
                                     </div>
                                     <div class="mb-2 text-blueGray-600 mt-10">
                                         <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                                        Solution Manager - Creative Tim Officer
+                                        {{ $doctor->specialty->specialty}}
                                     </div>
-                                    <div class="mb-2 text-blueGray-600">
-                                        <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                                        University of Computer Science
+                                    <div class="mb-2 ">
+                                        <form action="/addFavorite/">
+                                            <button type="submit" value="" class="focus:outline-none text-white bg-black hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Ajouter au favorie</button>
+                                        </form>
+                                        <form action="">
+                                            <button type="submit" value="" class="focus:outline-none text-white bg-black hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Prendre un rendez-vous</button>
+                                        </form>
+
                                     </div>
                                 </div>
 
