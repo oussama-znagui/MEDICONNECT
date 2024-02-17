@@ -19,4 +19,8 @@ class Doctor extends Model
     {
         return $this->belongsTo(Specialty::class);
     }
+    public function favories()
+    {
+        return $this->hasMany(Favorie::class);
+    }
 }

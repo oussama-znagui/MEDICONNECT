@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\FavorieController;
 use App\Http\Controllers\MedicinController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ProfileController;
@@ -33,6 +34,9 @@ Route::get('/admin', [SpecialtyController::class, "index"]);
 
 Route::get('/', [PatientController::class, "index"]);
 Route::get('/specialty/{specialty}', [SpecialtyController::class, "show"])->name("specialty");
+
+
+Route::get('/favorie/{doctor}', [FavorieController::class, "addToFavorie"])->name("favorie");
 
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
 

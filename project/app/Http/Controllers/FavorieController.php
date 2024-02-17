@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Favorie;
+use App\Models\Doctor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+
 
 class FavorieController extends Controller
 {
@@ -13,6 +17,15 @@ class FavorieController extends Controller
     public function index()
     {
         //
+    }
+    public function addToFavorie(Doctor $doctor)
+    {
+        Favorie::create([
+            'user_id' => Auth::id(),
+            'doctor_id' => $doctor->id,
+        ]);
+
+        return redirect('/spe');
     }
 
     /**
