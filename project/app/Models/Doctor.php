@@ -23,4 +23,8 @@ class Doctor extends Model
     {
         return $this->hasMany(Favorie::class);
     }
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
