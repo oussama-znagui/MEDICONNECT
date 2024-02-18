@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\FavorieController;
 use App\Http\Controllers\MedicinController;
@@ -43,6 +44,11 @@ Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
+
+Route::post('/addComment', [CommentController::class, "store"]);
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -53,7 +59,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+Route::post('/addComment', [CommentController::class, "store"]);
 Route::post('/AddSpeciality', [SpecialtyController::class, "store"]);
 Route::delete('/deleteSpecialty/{specialty}', [SpecialtyController::class, "destroy"])->name("deleteSpecialty");
 Route::patch('updateSpecialty/{specialty}', [SpecialtyController::class, "update"])->name("updateSpecialty");
