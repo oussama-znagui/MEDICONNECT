@@ -37,6 +37,7 @@ Route::get('/specialty/{specialty}', [SpecialtyController::class, "show"])->name
 
 
 Route::get('/favorie/{doctor}', [FavorieController::class, "addToFavorie"])->name("favorie");
+Route::get('/doctor/{doctor}', [DoctorController::class, "show"])->name("doctor");
 
 Route::get('/profilDoctor', [DoctorController::class, "index"]);
 

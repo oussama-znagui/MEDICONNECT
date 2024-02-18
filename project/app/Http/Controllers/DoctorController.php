@@ -41,7 +41,11 @@ class DoctorController extends Controller
      */
     public function show(Doctor $doctor)
     {
-        //
+        $doctor = Doctor::whereId($doctor->id)->get();
+
+        return view('doctor', [
+            "doctor" => $doctor,
+        ]);
     }
 
     /**
