@@ -15,11 +15,11 @@ class CommentController extends Controller
             'doctor_id' => ['required'],
         ]);
 
-        $comment =Comment::create([
+        $comment = Comment::create([
             'comment' => $request->comment,
             'doctor_id' => $request->doctor_id,
             'user_id' => auth()->id(),
         ]);
-        return redirect('/admin');
+        return redirect(route('doctor', $request->doctor_id));
     }
 }
