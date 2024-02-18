@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use App\Models\Doctor;
+use App\Models\Review;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -44,12 +45,15 @@ class DoctorController extends Controller
     public function show(Doctor $doctor)
     {
         $d = $doctor->id;
-        $doctor = Doctor::whereId($doctor->id)->get();
+        // $doctor = Doctor::find($doctor->id)->get();
         $comments = Comment::where('doctor_id', $d)->with('user')->get();
+        $note = Review::where('doctor_id', $d)->avg('note');
+
 
         return view('doctor', [
             "doctor" => $doctor,
             "comments" => $comments,
+            "note" => $note
         ]);
     }
 

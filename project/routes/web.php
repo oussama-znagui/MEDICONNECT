@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\FavorieController;
 use App\Http\Controllers\MedicinController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SpecialtyController;
 use App\Models\Medicin;
 use App\Models\Patient;
@@ -46,6 +48,12 @@ Route::get('/profilDoctor', [DoctorController::class, "index"]);
 
 
 Route::post('/addComment', [CommentController::class, "store"]);
+
+
+Route::post('/rating', [ReviewController::class, "store"]);
+
+
+Route::post('/appointment', [AppointmentController::class, "store"]);
 
 
 
